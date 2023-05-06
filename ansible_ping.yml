@@ -1,6 +1,7 @@
 ---
-name: This is test play
-hosts: 172.168.20.10
-tasks:
+- name: This is test play
+  hosts: HomeLab
+  gather_facts: no
+  tasks:
         - name: Ping test
           ping:
